@@ -1,6 +1,6 @@
 # news-python
 
-A Python API Wrapper for the news JSON API
+A Python API Wrapper for the https://newsapi.org/ JSON API
 
 ## Installation
 
