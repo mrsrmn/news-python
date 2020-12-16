@@ -17,11 +17,11 @@ class Global:
 
         if not source:
             response = requests.get(url=f"http://newsapi.org/v2/top-headlines?"
-                                        f"query={query.replace(' ', '%20')}&apiKey={self.key}")
+                                        f"q={query.replace(' ', '%20')}&apiKey={self.key}")
 
         else:
             response = requests.get(url=f"http://newsapi.org/v2/top-headlines?"
-                                        f"query={query.replace(' ', '%20')}&source=technology&apiKey={self.key}")
+                                        f"q={query.replace(' ', '%20')}&source=technology&apiKey={self.key}")
 
         news = json.loads(response.content)
         random_news = random.randint(0, len(news["articles"]) - 1)

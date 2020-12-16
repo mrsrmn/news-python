@@ -1,5 +1,5 @@
 from .country import Country
-from .global import Global
+from .global_news import Global
 
 __version__ = "0.1.0"
 __author__ = "MakufonSkifto"
