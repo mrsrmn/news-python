@@ -16,12 +16,14 @@ class Country:
         """
 
         if not category:
+            response = requests.get(url=f"http://newsapi.org/v2/top-headlines?country={country}&apiKey={self.key}")
+
+        else:
             response = requests.get(url=f"http://newsapi.org/v2/top-headlines?country={country}"
                                         f"&category={category.replace(' ', '%20')}&apiKey={self.key}")
-        else:
-            response = requests.get(url=f"http://newsapi.org/v2/top-headlines?country={country}&apiKey={self.key}")
+
         news = json.loads(response.content)
-        random_news = random.randint(0, len(news["articles"]))
+        random_news = random.randint(0, len(news["articles"]) - 1)
 
         return News(
             status=news["status"],
@@ -35,5 +37,3 @@ class Country:
             url=news["articles"][random_news]["url"],
             url_to_image=news["articles"][random_news]["urlToImage"]
         )
-
-
