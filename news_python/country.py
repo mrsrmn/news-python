@@ -10,8 +10,8 @@ class Country:
 
     def get_news(self, country, category=None):
         """
-        :param category:
-        :param country:
+        :param category: The category you want to search on
+        :param country: The country you want to search on
         :return: A random news from the selected country
         """
 
