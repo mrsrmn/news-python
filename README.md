@@ -25,4 +25,4 @@ More can be found in [the docs]() or in the [examples folder](https://github.com
 
 ## Errors
 
-The module will raise `KeyError` if the country doesn't exist in the API <b>(Only for the class `Country`)</b>
+The module will raise `KeyError` if the API can't find anything about the searched topic or country
