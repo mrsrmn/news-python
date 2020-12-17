@@ -21,7 +21,7 @@ print(f"{news_content.title}\n"
       f"{news_content.author}")
 ```
 
-More can be found in [the docs]()
+More can be found in [the docs]() or the [examples folder](https://github.com/MakufonSkifto/news-python/tree/main/examples)
 
 ## Errors
 
