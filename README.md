@@ -26,4 +26,6 @@ More can be found in [the docs]() or in the [examples folder](https://github.com
 
 ## Errors
 
-The module will raise `KeyError` if the API can't find anything about the searched topic or country
+The module will raise `KeyError` if the API key is wrong
+
+The module will raise `ValueError` if the API can't find anything about the searched topic or country
